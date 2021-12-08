@@ -1,0 +1,42 @@
+// VARIABLES
+// colors
+$box-primary-background: #112055;
+$box-primary-color: #fff;
+$box-secondary-background: #4f9d92;
+$box-secondary-color: #000;
+
+%box-shared {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+}
+
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+:hover {
+  box-shadow: none;
+}
+
+.box-primary {
+  @extend %box-shared;
+  background-color: $box-primary-background;
+  color: $box-primary-color;
+  .lighter {
+    background-color: lighten($box-primary-background, 20%);
+    }
+    .darker{
+        background-color: darken($box-primary-color,);
+    }
+}
+
+.box-secondary {
+  @extend %box-shared;
+  background-color: $box-secondary-background;
+  color: $box-secondary-color;
+}
