@@ -235,7 +235,7 @@ button:focus,
         fill: var(--sun-color-2);
     }
     100% {
-        fill: ;
+        fill: var(--sun-color-3);
     }
 }
 
