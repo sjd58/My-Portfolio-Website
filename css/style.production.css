@@ -13,7 +13,7 @@ Primary Color: (Teal) #357b70;
 Secondary Color: (Yellow) #e0b354;
 Text Color: (Dark Gray) #2b2b2b;
 Secondary Text Color: (White) #ffffff;
-Visited, Active Link Color: (Dark Blue) #0E2F44;
+Visited, Active Link Color: (Dark Blue) #00008b;
 Sun Color 1: (Light Yellow) #edc655;
 Sun Color 2: (Very Light Yellow) #fcffad;
 Sun Color 3: (Orange) #f76414;
@@ -54,7 +54,7 @@ a {
 
 a:visited {
     /* visited link*/
-    color: #0E2F44;
+    color: darkblue;
 }
 
 a:hover, a:focus {
@@ -64,7 +64,7 @@ a:hover, a:focus {
 
 a:active {
     /* selected link */
-    color: #0E2F44;
+    color: darkblue;
 }
 
 .button {
@@ -142,6 +142,8 @@ button:focus,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -272,7 +274,7 @@ button:focus,
         fill: #fcffad;
     }
     100% {
-        fill: ;
+        fill: #f76414;
     }
 }
 
@@ -284,7 +286,7 @@ button:focus,
         fill: #fcffad;
     }
     100% {
-        fill: ;
+        fill: #f76414;
     }
 }
 
