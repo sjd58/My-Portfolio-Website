@@ -46,6 +46,8 @@ h1 {
 h2 {
     font-size: 18px;
     font-weight: 700;
+    padding: 20px;
+    text-align: center;
 }
 
 a {
@@ -329,4 +331,14 @@ button:focus,
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.contact-info_wrapper {
+    display: grid;
+    padding: 20px;
+    width: 400px;
+}
+
+#email-link {
+    text-align: center;
 }
