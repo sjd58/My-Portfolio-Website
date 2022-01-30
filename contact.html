@@ -35,31 +35,45 @@
         </nav>
     </header>  
         <h1>How to Reach Samuel Dickson</h1>
-    <div>
-        11 Penhurst Road<br>
-        Pittsburgh, PA 15202<br>
-        <br>
-        Telephone number: <a href="tel:+4123508780">1+ (412) 350-8780</a><br>
-        Email address: <a href="mailto:sjdickson4@gmail.com">sjdickson4(at)gmail(dot)com </a><br>
-        <br>
+    <div class="contact-info_wrapper">
+        <ul>
+            <li>
+                11 Penhurst Road<br>Pittsburgh, PA 15202
+            </li>
+            <li>
+                Telephone number: <a href="tel:+4123508780">1+ (412) 350-8780</a>
+            </li>
+            <li>
+                Email address: <a href="mailto:sjdickson4@gmail.com">sjdickson4(at)gmail(dot)com </a>
+            </li>
+        </ul>
     </div>
         <h2>Please feel free to reach out!</h2>
-    <div>
+    <div class="contact-info_wrapper">
         <form method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email" required>
-
-            <label class="standard-label" for="contact-telephone">Telephone: </label>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
-
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea maxlength="240" id="maxlength" required></textarea>
-            <input type="submit" value="Send Message" id="contact-message">
+            <ul>
+                <li>
+                    <label class="standard-label" for="contact-email">Email: </label>
+                    <input type="email" id="contact-email" required>
+                </li>
+                <li>
+                    <label class="standard-label" for="contact-telephone">Telephone: </label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
+                </li>
+                <li>
+                    <label class="standard-label" for="contact-message">Message: </label>
+                    <textarea maxlength="240" id="maxlength" required></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Send Message" id="contact-message">
+                </li>
+            </ul>
         </form>
+        <div id="email-link">
+            <a href="mailto:sjdickson4@gmail.com">Contact me!</a>
+        </div>
     </div>
-    <div>
-        <a href="mailto:sjdickson4@gmail.com">Contact me!</a>
-    </div>
+
     <footer class="page-footer">
         <div class="social-media"> 
             <p>Find me on</p>
