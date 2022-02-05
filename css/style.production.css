@@ -233,6 +233,7 @@ button:focus,
       width: auto;
       min-height: auto;
       margin: 0;
+      padding: 20px
 }
 
 @media all and (max-width: 500px) {
