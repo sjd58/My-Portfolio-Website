@@ -14,17 +14,8 @@ Secondary Color: (Yellow) #e0b354;
 Text Color: (Dark Gray) #2b2b2b;
 Secondary Text Color: (White) #ffffff;
 Visited, Active Link Color: (Dark Blue) #00008b;
-Sun Color 1: (Light Yellow) #edc655;
-Sun Color 2: (Very Light Yellow) #fcffad;
-Sun Color 3: (Orange) #f76414;
 
 */
-
-:root {
-    /* color variables */
-    /* font variables */
-    
-}
 
 body {
     background-color: #D2D3D2;
@@ -194,29 +185,10 @@ button:focus,
     padding: 20pxd
 }
 
-.sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/* start grid fallback */
 .grid__item {
     display: inline-block;
     width: 33%;
-    box-shadow: 3px 3px gray;
-    border: 1px black;
    }
-   /* end grid fallback */
 
 @supports (display: grid) {
     .grid {
@@ -235,100 +207,9 @@ button:focus,
       width: auto;
       min-height: auto;
       margin: 0;
-      padding: 20px
-}
-
-@media all and (max-width: 500px) {
-    .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-}
-@media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media all and (max-width: 750px) {
-    .grid {
-        grid-gap: 10px;
-    }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px
-    }
-}
-
-@-webkit-keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f76414;
-    }
-}
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f76414;
-    }
-}
-
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
+      padding: 20px;
+      box-shadow: 3px 3px gray;
+      border: 1px black;
 }
 
 * {
