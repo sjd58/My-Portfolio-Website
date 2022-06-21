@@ -213,6 +213,8 @@ button:focus,
 .grid__item {
     display: inline-block;
     width: 33%;
+    box-shadow: 3px 3px gray;
+    border: 1px black;
    }
    /* end grid fallback */
 
@@ -338,8 +340,9 @@ button:focus,
     display: grid;
     padding: 20px;
     width: 400px;
+    text-align: center;
 }
 
 #email-link {
-    text-align: center
+    text-align: center;
 }
