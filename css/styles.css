@@ -7,10 +7,6 @@ Secondary Color: (Yellow) #e0b354;
 Text Color: (Dark Gray) #2b2b2b;
 Secondary Text Color: (White) #ffffff;
 Visited, Active Link Color: (Dark Blue) #0E2F44;
-Sun Color 1: (Light Yellow) #edc655;
-Sun Color 2: (Very Light Yellow) #fcffad;
-Sun Color 3: (Orange) #f76414;
-
 */
 
 :root {
@@ -21,9 +17,6 @@ Sun Color 3: (Orange) #f76414;
     --text-color: #2b2b2b;
     --secondary-text-color: #ffffff;
     --visited-active-link-color: #0E2F44;
-    --sun-color-1: #edc655;
-    --sun-color-2: #fcffad;
-    --sun-color-3: #f76414;
     /* font variables */
     --default-font-size: 16px;
     --h1-font-size: 30px;
@@ -224,36 +217,6 @@ button:focus,
     }
     h1 {
         font-size: 22px
-    }
-}
-
-@keyframes color-change {
-    0% {
-        fill: var(--sun-color-1);
-    }
-    50% {
-        fill: var(--sun-color-2);
-    }
-    100% {
-        fill: var(--sun-color-3);
-    }
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
     }
 }
 
